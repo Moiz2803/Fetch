@@ -74,7 +74,7 @@ echo -n "<sample_base64_encrypted_string>" | base64 --decrypt
 
 # Regarding the questions. # 
 
-``I would take the following actions in order to deploy this application in production:
+```I would take the following actions in order to deploy this application in production:
 
 Deployment Method:
 
@@ -150,10 +150,10 @@ Increase the number of worker nodes to process messages from the SQS queue concu
 
 Use partitioning or sharding techniques to distribute data across a number of database nodes.
 
-Use caching techniques (like Redis) to speed up response times and lessen the load on the database.``
+Use caching techniques (like Redis) to speed up response times and lessen the load on the database.```
 
 
-``Recovery of Masked PII:
+```Recovery of Masked PII:
 
 The base64 encryption method offered allows for the recovery of the masked PII (Personal Identifiable Information). The base64_encode function in the code uses base64 encoding to encode the original PII values. To get back the initial values:
 
@@ -172,7 +172,7 @@ Access Control: I assumed that only authorized personnel with appropriate access
 
 Data Recovery: I assumed that the process of recovering masked PII would be subject to strict auditing and monitoring to prevent misuse.
 
-It's important to note that while base64 encoding provides a level of obfuscation, it's not a secure encryption method for sensitive data. In a real-world scenario, more robust encryption techniques should be used to protect sensitive information.``
+It's important to note that while base64 encoding provides a level of obfuscation, it's not a secure encryption method for sensitive data. In a real-world scenario, more robust encryption techniques should be used to protect sensitive information.```
 
 
 
