@@ -1,7 +1,18 @@
 # Fetch #
 ## Data Engineering Take Home: ETL off a SQS Queue ##
 
-This project is the solution for the Data Engineering assignment given by Fetch
+This project is the solution for the Data Engineering assignment given by Fetch.
+
+# Have the following installed on your PC #
+
+Ubuntu -- ``apt-get -y install make``
+Windows -- ``choco install make``
+Mac -- ``brew install make``
+python3
+pip3 -- ``python -m ensurepip --upgrade`` or ``run make pip-install`` in root
+awslocal -- ``pip install awscli-local`` or run ``make pip install`` in root
+docker 
+docker-compose
 
 ## To run the code
 1. Clone this repo.
