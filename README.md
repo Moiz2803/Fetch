@@ -10,48 +10,48 @@ git clone https://github.com/Moiz2803/Fetch.git
 ``
 
 2. Go into the cloned repo.
-```bash
+``bash
 cd Fetch
-```
+``
 
 3. Run the `make` command to install dependencies.
-```bash
+``bash
 make pip-install
-```
+``
 
 4. Run the `make` command to configure the aws shell.
-```bash
+``bash
 make aws-configure
-```
+``
 
 5. Pull and start docker containers.
-```bash
+``bash
 make start
-```
+``
 
 6. Run Python code to perform the ETL process.
-```bash
+``bash
 make perform-etl
-```
+``
 
 ## Verifying messages loaded in Postgres
 - To validate the messages loaded in Postgres
-```bash
+``bash
 psql -d postgres -U postgres -p 5432 -h localhost -W
-```
+``
 - Credentials and database information
     - **username**=`postgres`
     - **password**=`postgres`
     - **database**=`postgres`
 
 - If `psql` binary is not installed on Ubuntu based distros, install it using the below command.
-```bash
+``bash
 apt install postgresql-client
-```
+``
 
 ## Decrypting masked PIIs
 - The `ip` and `device_id` fields are masked using base64 encryption.
 - To recover the encrypted fields, we can use the below command.
-```bash
+``bash
 echo -n "<sample_base64_encrypted_string>" | base64 --decrypt
-```
+``
