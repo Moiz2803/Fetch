@@ -7,12 +7,12 @@ https://bitbucket.org/fetchrewards/data-engineering-take-home/src/master/
 ## To run the code
 1. Clone this repo.
 ```bash
-git clone https://github.com/prasadashu/data-engineering-fetch-rewards.git
+git clone https://github.com/Moiz2803/Fetch.git
 ```
 
 2. Go into the cloned repo.
 ```bash
-cd data-engineering-fetch-rewards
+cd Fetch
 ```
 
 3. Run `make` command to install dependencies.
