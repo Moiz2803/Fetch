@@ -74,29 +74,9 @@ echo -n "<sample_base64_encrypted_string>" | base64 --decrypt
 
 # Regarding the questions. # 
 
-```I would take the following actions in order to deploy this application in production:
+```I would take the following actions in order to deploy this application in production: ```
 
-Deployment Method:
-
-
-
-Create a cloud infrastructure for hosting the application components, such as AWS, Azure, or Google Cloud.
-
-For simple deployment and scaling, containerize the application using Docker or another containerization tool.
-
-To manage and scale the application containers, use a platform for container orchestration like Kubernetes.
-
-Utilising a Continuous Integration/Continuous Deployment (CI/CD) pipeline for automated deployment and updates, deploy the application containers to production.
-
-Enhancing Production-Readiness Components
-
-
-
-Monitoring and logging: To track the application's health and performance metrics, integrate monitoring tools like Prometheus or New Relic. To gather and analyse logs, use centralised logging solutions (like the ELK stack).
-
-I would take the following actions in order to deploy this application in production:
-
-Deployment Method:
+ # Deployment Method:
 
 
 
@@ -115,24 +95,6 @@ Enhancing Production-Readiness Components
 Monitoring and logging: To track the application's health and performance metrics, integrate monitoring tools like Prometheus or New Relic. To gather and analyse logs, use centralised logging solutions (like the ELK stack).
 
 I would take the following actions in order to deploy this application in production:
-
-Deployment Method:
-
-
-
-Create a cloud infrastructure for hosting the application components, such as AWS, Azure, or Google Cloud.
-
-For simple deployment and scaling, containerize the application using Docker or another containerization tool.
-
-To manage and scale the application containers, use a platform for container orchestration like Kubernetes.
-
-Utilising a Continuous Integration/Continuous Deployment (CI/CD) pipeline for automated deployment and updates, deploy the application containers to production.
-
-Enhancing Production-Readiness Components
-
-
-
-Monitoring and logging: To track the application's health and performance metrics, integrate monitoring tools like Prometheus or New Relic. To gather and analyse logs, use centralised logging solutions (like the ELK stack).
 
 Security: Implement security measures such as encryption of sensitive data at rest and in transit. Use identity and access management (IAM) roles to ensure secure access to resources.
 
@@ -143,24 +105,24 @@ Database Scaling: Implement strategies for database scaling, such as using Amazo
 Automated Backups: Regularly back up the database to prevent data loss in case of failures.
 
 
-Growing Dataset Scaling:
+# Growing Dataset Scaling:
 
 
 Increase the number of worker nodes to process messages from the SQS queue concurrently by using horizontal scaling.
 
 Use partitioning or sharding techniques to distribute data across a number of database nodes.
 
-Use caching techniques (like Redis) to speed up response times and lessen the load on the database.```
+Use caching techniques (like Redis) to speed up response times and lessen the load on the database.
 
 
-```Recovery of Masked PII:
+# Recovery of Masked PII:
 
 The base64 encryption method offered allows for the recovery of the masked PII (Personal Identifiable Information). The base64_encode function in the code uses base64 encoding to encode the original PII values. To get back the initial values:
 
 Obtain the masked PII values from the logs or database.
 To decode the masked value, use the base64 decoding command as described in the README file.
 
-Assumptions Made:
+# Assumptions Made:
 
 Data Integrity: I assumed that the masked PII values would be stored securely and would not be compromised, as recovering the original values would undermine the data privacy measures.
 
@@ -172,7 +134,7 @@ Access Control: I assumed that only authorized personnel with appropriate access
 
 Data Recovery: I assumed that the process of recovering masked PII would be subject to strict auditing and monitoring to prevent misuse.
 
-It's important to note that while base64 encoding provides a level of obfuscation, it's not a secure encryption method for sensitive data. In a real-world scenario, more robust encryption techniques should be used to protect sensitive information.```
+It's important to note that while base64 encoding provides a level of obfuscation, it's not a secure encryption method for sensitive data. In a real-world scenario, more robust encryption techniques should be used to protect sensitive information.
 
 
 
