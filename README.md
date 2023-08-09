@@ -1,8 +1,7 @@
-# Fetch Rewards #
-## Data Engineering Take Home: ETL off a SQS Qeueue ##
+# Fetch #
+## Data Engineering Take Home: ETL off a SQS Queue ##
 
-This project is the solution for the Data Engineering assignment given in the below link:
-https://bitbucket.org/fetchrewards/data-engineering-take-home/src/master/
+This project is the solution for the Data Engineering assignment given by Fetch
 
 ## To run the code
 1. Clone this repo.
@@ -15,12 +14,12 @@ git clone https://github.com/Moiz2803/Fetch.git
 cd Fetch
 ```
 
-3. Run `make` command to install dependencies.
+3. Run the `make` command to install dependencies.
 ```bash
 make pip-install
 ```
 
-4. Run `make` command to configure aws shell.
+4. Run the `make` command to configure the aws shell.
 ```bash
 make aws-configure
 ```
@@ -30,12 +29,12 @@ make aws-configure
 make start
 ```
 
-6. Run Python code to perform ETL process.
+6. Run Python code to perform the ETL process.
 ```bash
 make perform-etl
 ```
 
-## Checking messages loaded in Postgres
+## Verifying messages loaded in Postgres
 - To validate the messages loaded in Postgres
 ```bash
 psql -d postgres -U postgres -p 5432 -h localhost -W
