@@ -5,9 +5,9 @@ This project is the solution for the Data Engineering assignment given by Fetch
 
 ## To run the code
 1. Clone this repo.
-```bash
+``bash
 git clone https://github.com/Moiz2803/Fetch.git
-```
+``
 
 2. Go into the cloned repo.
 ```bash
